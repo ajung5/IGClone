@@ -10,12 +10,22 @@ import SwiftUI
 struct Home: View {
     
     var userStories: UserStoryModel
+    var userPost: UserPostModel
     
     var body: some View {
         
         Header()
         
-        Stories()
+        ScrollView(.vertical) {
+            Stories()
+            
+            ScrollView {
+                Post(userPost: userPosts[2], userProfile: userStory[2])
+                Post(userPost: userPost, userProfile: userStories)
+                Post(userPost: userPost, userProfile: userStories)
+            }
+        }
+        .scrollIndicators(.hidden)
         
         Divider()
         
@@ -26,7 +36,7 @@ struct Home: View {
 }
 
 #Preview {
-    Home(userStories: userStory[5])
+    Home(userStories: userStory[5], userPost: userPosts[0])
 }
 
 
