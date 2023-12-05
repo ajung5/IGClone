@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserStoryModel {
+struct UserStoryModel: Identifiable, Hashable {
     let id: UUID = .init()
     let image: String
     let name: String
