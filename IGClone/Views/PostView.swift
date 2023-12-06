@@ -16,11 +16,11 @@ struct PostView: View {
             // MARK: Post Header
             HStack {
                 HStack {
-                    Image(userPost.userImage)
+                    Image(userPost.userAccount.image)
                         .resizable()
                         .frame(width: 30, height: 30)
                         .clipShape(Circle())
-                    Text(userPost.userName)
+                    Text(userPost.userAccount.name)
                         .font(.callout)
                         .fontWeight(.bold)
                 }
@@ -63,7 +63,7 @@ struct PostView: View {
                 
                 HStack {
                     HStack {
-                        Image(userPost.userImage)
+                        Image(userPost.userAccount.image)
                             .resizable()
                             .frame(width: 24, height: 24)
                             .clipShape(Circle())
