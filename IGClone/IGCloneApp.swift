@@ -11,7 +11,7 @@ import SwiftUI
 struct IGCloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(userStories: userStory[0], userPost: userPosts[0])
         }
     }
 }

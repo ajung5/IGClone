@@ -14,21 +14,15 @@ struct Home: View {
     
     var body: some View {
         
-        Header()
-        
-        ScrollView(.vertical) {
-            Stories()
-            
-            Posts()
+        NavigationStack {
+            Header()
+    
+            ScrollView {
+                Stories()
+                Posts()
+            }
+            .scrollIndicators(.hidden)
         }
-        .scrollIndicators(.hidden)
-        
-        Divider()
-        
- 
-        
-        
-        
     }
 }
 

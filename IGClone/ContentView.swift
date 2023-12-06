@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var userStories: UserStoryModel
+    var userPost: UserPostModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Home(userStories: userStory[0], userPost: userPosts[0])
+                .tabItem {
+                    Image("home")
+                }
+            
+            Text("search")
+                .tabItem {
+                    Image("search")
+                }
+            Text("media")
+                .tabItem {
+                    Image("media")
+                }
+            Text("cart")
+                .tabItem {
+                    Image("cart")
+                }
+            
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                        .renderingMode(.template)
+                        .foregroundStyle(.black)
+                }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(userStories: userStory[0], userPost: userPosts[0])
 }

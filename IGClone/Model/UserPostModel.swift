@@ -29,12 +29,12 @@ let userPosts: [UserPostModel] = [
 //    UserPostModel(userImage: "profile8", postImage:"post8", userName: "Harry", description: "This is my eighth post!", likedBy: "Isabella", likeCount: 45),
 //    UserPostModel(userImage: "profile8", postImage:"post9", userName: "Isabella", description: "This is my ninth post!", likedBy: "Harry", likeCount: 50),
     UserPostModel(userAccount: UserStoryModel(image: "profile1", name: "John Doe"), postImage:"post10", description: "This is my tenth post!", likedBy: "Lily", likeCount: 55),
-    UserPostModel(userAccount: UserStoryModel(image: "profile5", name: "Charlie"), postImage:"post9", description: "This is my tenth post!", likedBy: "Frank", likeCount: 55),
+    UserPostModel(userAccount: UserStoryModel(image: "profile5", name: "Charlie"), postImage:"post2", description: "This is my tenth post!", likedBy: "Frank", likeCount: 55),
     UserPostModel(userAccount: UserStoryModel(image: "profile5", name: "Charlie"), postImage:"post7", description: "This is my tenth post!", likedBy: "Harry", likeCount: 55),
-    UserPostModel(userAccount: UserStoryModel(image: "profile7", name: "Eva"), postImage:"post5", description: "This is my tenth post!", likedBy: "Emma", likeCount: 55),
+    UserPostModel(userAccount: UserStoryModel(image: "profile7", name: "Eva"), postImage:"post6", description: "This is my tenth post!", likedBy: "Emma", likeCount: 55),
     UserPostModel(userAccount: UserStoryModel(image: "profile9", name: "Grace"), postImage:"post10", description: "This is my tenth post!", likedBy: "Lily", likeCount: 55),
     UserPostModel(userAccount: UserStoryModel(image: "profile5", name: "Charlie"), postImage:"post9", description: "This is my tenth post!", likedBy: "Frank", likeCount: 55),
-    UserPostModel(userAccount: UserStoryModel(image: "profile9", name: "Grace"), postImage:"post7", description: "This is my tenth post!", likedBy: "Harry", likeCount: 55),
-    UserPostModel(userAccount: UserStoryModel(image: "profile1", name: "John Doe"), postImage:"post5", description: "This is my tenth post!", likedBy: "Emma", likeCount: 55)
+    UserPostModel(userAccount: UserStoryModel(image: "profile9", name: "Grace"), postImage:"post4", description: "This is my tenth post!", likedBy: "Harry", likeCount: 55),
+    UserPostModel(userAccount: UserStoryModel(image: "profile1", name: "John Doe"), postImage:"post1", description: "This is my tenth post!", likedBy: "Emma", likeCount: 55)
 
 ]
