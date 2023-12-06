@@ -19,11 +19,7 @@ struct Home: View {
         ScrollView(.vertical) {
             Stories()
             
-            ScrollView {
-                Post(userPost: userPosts[2], userProfile: userStory[2])
-                Post(userPost: userPost, userProfile: userStories)
-                Post(userPost: userPost, userProfile: userStories)
-            }
+            Posts()
         }
         .scrollIndicators(.hidden)
         
@@ -71,6 +67,18 @@ struct Stories: View {
                 ForEach(userStory.shuffled()) { item in
                     Story(userStories: item)
                 }
+            }
+        }
+        .scrollIndicators(.hidden)
+    }
+}
+
+// MARK: Posts
+struct Posts: View {
+    var body: some View {
+        ScrollView {
+            ForEach(userPosts.shuffled()) { item in
+                PostView(userPost: item)
             }
         }
         .scrollIndicators(.hidden)
