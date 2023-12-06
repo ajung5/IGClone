@@ -18,7 +18,7 @@ struct Post: View {
             
             PostHeader(userPost: userPosts[0], userProfile: userStory[0])
             
-            PostContent(userPost: userPosts[0])
+            PostContent(userPost: userPosts[2])
             
             PostDescription(userPost: userPosts[0], userProfile: userStory[0])
             
@@ -27,7 +27,7 @@ struct Post: View {
 }
 
 #Preview {
-    Post(userPost: userPosts[7], userProfile: userStory[0])
+    Post(userPost: userPosts[0], userProfile: userStory[0])
 }
 
 // MARK: Post Header
@@ -65,8 +65,11 @@ struct PostContent: View {
         VStack(spacing: 0.0) {
             Image(userPost.postImage)
                 .resizable()
-                .frame(maxWidth: .infinity)
-                .scaledToFit()
+                .scaledToFill()
+                .frame(width: (UIScreen.main.bounds.width),
+                       height: (UIScreen.main.bounds.width))
+                .clipped()
+
             
             HStack {
                 HStack(spacing: 10) {
