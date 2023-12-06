@@ -9,30 +9,20 @@ import SwiftUI
 
 struct SearchView: View {
     
-    @State var teks: String = ""
-
+    @State var teks: String
     
     var body: some View {
-        VStack {
-            // MARK: Search Bar
-            HStack {
-                Button(action: {}) {
-                    Image("search")
-                }
-                .padding(.horizontal, 5)
-                
-                TextField("Search", text: $teks)
-                    .foregroundStyle(.black)
-                    .padding(7)
-            }
-            .background(Color.gray.opacity(0.2))
-            .cornerRadius(10)
-            .padding(.horizontal, 5)
+        VStack(spacing: 10.0) {
+            SearchInput(teks: "")
+                .padding(.horizontal, 10)
             
+            Labels()
+            
+            Spacer()
         }
     }
 }
 
 #Preview {
-    SearchView()
+    SearchView(teks: "")
 }
