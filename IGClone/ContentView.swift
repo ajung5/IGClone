@@ -19,7 +19,7 @@ struct ContentView: View {
                     Image("home")
                 }
             
-            Text("search")
+            SearchView()
                 .tabItem {
                     Image("search")
                 }
