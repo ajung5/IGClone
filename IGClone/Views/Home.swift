@@ -25,7 +25,8 @@ struct Home: View {
         
         Divider()
         
-        Spacer()
+ 
+        
         
         
     }
@@ -81,6 +82,5 @@ struct Posts: View {
                 PostView(userPost: item)
             }
         }
-        .scrollIndicators(.hidden)
     }
 }

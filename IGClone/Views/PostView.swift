@@ -21,7 +21,7 @@ struct PostView: View {
                         .frame(width: 30, height: 30)
                         .clipShape(Circle())
                     Text(userPost.userName)
-                        .font(.caption)
+                        .font(.callout)
                         .fontWeight(.bold)
                 }
                 Spacer()
@@ -57,7 +57,7 @@ struct PostView: View {
             
             // MARK: Post Description
             VStack(alignment: .leading, spacing: 0.0) {
-                Text("Liked by \(userPost.likedBy) and \(userPost.likeCount) others")
+                Text("Liked by **\(userPost.likedBy)** and **\(userPost.likeCount)** others")
                 
                 Text(userPost.description)
                 
