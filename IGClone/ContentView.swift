@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            Home(userStories: userStory[0], userPost: userPosts[0])
+            HomeView(userStories: userStory[0], userPost: userPosts[0])
                 .tabItem {
                     Image("home")
                 }

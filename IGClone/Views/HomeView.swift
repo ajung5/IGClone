@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     
     var userStories: UserStoryModel
     var userPost: UserPostModel
@@ -27,7 +27,7 @@ struct Home: View {
 }
 
 #Preview {
-    Home(userStories: userStory[5], userPost: userPosts[0])
+    HomeView(userStories: userStory[5], userPost: userPosts[0])
 }
 
 
